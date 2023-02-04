@@ -14,17 +14,17 @@ ul{
 }
 
 
-/*　画像内の文字の位置  */
-/* .fontPosition img{
+.fontPosition{
     position: relative;
 }
 p{
     position: absolute;
     top: 0%;
-    left: 100%;
+    right: 0px;
     font-size: 20px;
     color: black;
-} */
+    background-color: aqua;
+}
 
 /* １列目 */
 .firstColumm{
@@ -38,8 +38,7 @@ p{
     display: flex;
     justify-content: space-around;
 } 
-/* 👆１つのdivの中では勝手に横並びになるから不要？
- ⇒必要。配置を変えたいからこの二つはセット。 */
+
 
 /* 3列目 */
 .thirdColumm{
@@ -52,28 +51,13 @@ p{
     display: flex;
     justify-content: space-around;
 }
-/* .bigpicture1{
-    display: flex;
-    justify-content: space-around; */
-/* 👆大画像　個別にflexかけても変化なし */
-
-/* .test1{
-    display: flex;
-    justify-content: space-around;
-}
-.test2{
-    display: flex;
-    justify-content: space-around;
-    /* 小画像２セットにそれぞれかけても変化なし */
 
 
 .square1{
     display: flex;
     flex-wrap: wrap;
-    /* 👆複数行に折り返す表示 */
     justify-content: space-around;
 }
-/*　👆２枚２列に分けるパターンのコード */
 
 /* 5列目 */
 .fifthColumm{
@@ -84,7 +68,6 @@ p{
 .square2{
     display: flex;
     flex-wrap: wrap;
-    /* 👆複数行に折り返す表示 */
     justify-content: space-around;
 }
 
