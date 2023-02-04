@@ -1,0 +1,101 @@
+.header-top{
+    float:right;
+}
+
+.header-bottom{
+    display: flex;
+    justify-content: space-between;
+    clear:right;
+
+}
+
+ul{
+    display: flex;
+}
+
+
+/*　画像内の文字の位置  */
+/* .fontPosition img{
+    position: relative;
+}
+p{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    font-size: 20px;
+    color: black;
+} */
+
+/* １列目 */
+.firstColumm{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* 2列目 */
+.secondcColumm{
+    display: flex;
+    justify-content: space-around;
+} 
+/* 👆１つのdivの中では勝手に横並びになるから不要？
+ ⇒必要。配置を変えたいからこの二つはセット。 */
+
+/* 3列目 */
+.thirdColumm{
+    display: flex;
+    justify-content: space-around;
+} 
+
+/* 4列目 */
+.forthColumm{
+    display: flex;
+    justify-content: space-around;
+}
+/* .bigpicture1{
+    display: flex;
+    justify-content: space-around; */
+/* 👆大画像　個別にflexかけても変化なし */
+
+/* .test1{
+    display: flex;
+    justify-content: space-around;
+}
+.test2{
+    display: flex;
+    justify-content: space-around;
+    /* 小画像２セットにそれぞれかけても変化なし */
+
+
+.square1{
+    display: flex;
+    flex-wrap: wrap;
+    /* 👆複数行に折り返す表示 */
+    justify-content: space-around;
+}
+/*　👆２枚２列に分けるパターンのコード */
+
+/* 5列目 */
+.fifthColumm{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+}
+.square2{
+    display: flex;
+    flex-wrap: wrap;
+    /* 👆複数行に折り返す表示 */
+    justify-content: space-around;
+}
+
+/* 6列目 */
+.sixthColumm{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 7列目 */
+.seventh{
+    display: flex;
+    justify-content: flex-start;
+}
