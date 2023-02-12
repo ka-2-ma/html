@@ -5,43 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css">
     <link rel="stylesheet" href="reset.css">
 </head>
 <body>
     <header>
         <!-- 上スタート -->
-        <div class="header-top">
-            <button>access</button>
-            <button>
-                <span>✉</span>
-                <span>contact</span>
-            </button>
-        </div>
-        <!-- 下スタート -->
-        <div class="header-bottom">
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-                <li>8</li>
-                <li>9</li>
-                <li>10</li>
-                <li>11</li>
-            </ul>
-            <button>
-                <span>🔍</span>
-                <span>🌐</span>
-            </button>   
+        <!-- main下部 ボタン（スクロールすると『infomation』の下に入り込んでしまう。。。） -->
+        <!-- <div class="headerimg">
+            <img src="test.jpg" alt="" height="60px" width="100%">
+        </div> -->
+        <div class="headerAll">
+            <div class="header-top">
+                <button>access</button>
+                <button>
+                    <span>✉</span>
+                    <span>contact</span>
+                </button>
+            </div>
+            <!-- 下スタート -->
+            <div class="header-bottom">
+                <div class="titlel">
+                    <img src="test.jpg" alt="" width="20px" height="20px">
+                </div>
+
+                <div class="title2">
+                    <a class="Title" href="https://www.team-lab.com/">WORKS</a>
+                    <a class="Title" href="https://www.team-lab.com/">PRODUCTS</a>
+                    <a class="Title" href="https://www.team-lab.com/">NEWS</a>
+                    <a class="Title" href="https://www.team-lab.com/">ABOUT</a>
+                    <a class="Title" href="https://www.team-lab.com/">RECRUIT</a>
+                </div>
+
+                <div class="title3">
+                    <a class="Title" href="https://www.team-lab.com/">開催中の展示</a>
+                    <a class="Title" href="https://www.team-lab.com/">ART</a>
+                    <a class="Title" href="https://www.team-lab.com/">ARCHITECT</a>
+                    <a class="Title" href="https://www.team-lab.com/">未来の遊園地</a>
+                    <a class="Title" href="https://www.team-lab.com/">BOOK</a>
+                </div>
+
+                <button class="title4">
+                    <span>🔍</span>
+                    <span>🌐</span>
+                </button>   
+            </div>
         </div>
     </header>
 
+    <div class="space">  </div>
+    <!--『position: fixed;』がmainと重なるから、それを防ぐために置いた  -->
+
     <main->
-        <div class="main-top">
+
+        <div class="mainTop">
             <!-- ここから画像７列(imgを使ったが、tableを使うべき？) -->
             <!-- 画像１列目 -->
             <div class="firstColumm">
@@ -190,65 +207,111 @@
 
         <!-- main下部 情報コーナー -->
         <div class="main-bottom">
-            <div class="calendar1">
-                
-                <div>NEWS <br> 2022〜 </div>
-                <!-- <div>2022〜</div> -->
-                
-                <div>○○の紹介</div>
-            <div>
-            <div class="calendar2">
-                <div>
-                    <div>NEWS</div>
-                    <div>2022〜</div>
-                </div>
-                <div>
-                    <span>○○の紹介</span>
+            <div class="infomationTitle">NEWS</div>
+
+            <!-- 情報コーナー１列目 -->
+            <div class="infomation">
+                <a href="https://www.team-lab.com/"><img src="test.jpg" width="5%" height="100px"></a>
+                <div class="calendar1">
+                    <div class="caption">NEWS <br> 2022〜 </div>
+                    <div class="detail">○○の紹介</div>
                 </div>
             </div>
-            <div class="calendar3">
-                <div>
-                    <div>MEDIA</div>
-                    <div>2022〜</div>
-                </div>
-                <div>
-                    <span>○○の紹介</span>
-                </div>
-            <div>
-            <div class="calendar4">
-                <div>
-                    <div>MEDIA</div>
-                    <div>2022〜</div>
-                </div>
-                <div>
-                    <span>○○の紹介</span>
+
+            <!-- 情報コーナー2列目 -->
+            <div class="infomation">
+                <a href="https://www.team-lab.com/"><img src="test.jpg" width="5%" height="100px"></a>
+                <div class="calendar2">
+                    <div class="caption">NEWS <br> 2022〜</div>
+                    <div class="detail">○○の紹介</div>
                 </div>
             </div>
-            <div class="calendar5">
-                <div>
-                    <div>MEDIA</div>
-                    <div>2022〜</div>
-                </div>
-                <div>
-                    <span>○○の紹介</span>
-                </div>
-            <div>
-            <div class="calendar6">
-                <div>
-                    <div>MEDIA</div>
-                    <div>2022〜</div>
-                </div>
-                <div>
-                    <span>○○の紹介</span>
+            
+            <!-- 情報コーナー3列目 -->
+            <div class="infomation">
+                <a href="https://www.team-lab.com/"><img src="test.jpg" width="5%" height="100px"></a>
+                <div class="calendar3">
+                    <div class="caption">MEDIA <br> 2022〜</div>
+                    <div class="detail">○○の紹介</div>
                 </div>
             </div>
-    
+
+            <!-- 情報コーナー４列目 -->
+            <div class="infomation">
+                <a href="https://www.team-lab.com/"><img src="test.jpg" width="5%" height="100px"></a>
+                <div class="calendar4">
+                    <div class="caption">MEDIA <br> 2022〜</div>
+                    <div class="detail">○○の紹介</div>
+                </div>
+            </div>
+
+            <!-- 情報コーナー５列目 -->
+            <div class="infomation">
+                <a href="https://www.team-lab.com/"><img src="test.jpg" width="5%" height="100px"></a>
+                <div class="calendar5">
+                    <div class="caption">MEDIA <br> 2022〜</div>
+                    <div class="detail">○○の紹介</div>
+                </div>
+            </div>
+
+            <!-- 情報コーナー６列目 -->
+            <div class="infomation">
+                <a href="https://www.team-lab.com/"><img src="test.jpg" width="5%" height="100px"></a>
+                <div class="calendar6">
+                    <div class="caption">MEDIA <br>2022〜</div>
+                    <div class="detail">○○の紹介</div>
+                </div>
+            </div>
+            
+            
+            <div class="ButtonArea">
+                <a class="block button" href="https://www.team-lab.com/">VIEW MORE</a>
+            </div>
+
+            <!-- 一番下の画像三枚 -->
+            <div class="additionInfo">
+                <a class="info1" href="https://www.team-lab.com/"><img src="test.jpg" ></a>
+                <a class="info2" href="https://www.team-lab.com/"><img src="test.jpg"></a>
+                <a class="info3" href="https://www.team-lab.com/"><img src="test.jpg"></a>
+            </div>
+
         </div>
     </main>
 
 
     <footer>
+        <div class="footerAll">
 
+            <div class="footerTop">
+                <a href="https://www.team-lab.com/">
+                    ✉  CONTACT
+                </a>
+            </div>
+
+            <div class="footerCenter">
+                <a class="PP" href="https://www.team-lab.com/">
+                    privacy policy 
+                </a>
+                <div class="Lab">
+                    ©teamLab
+                </div>
+            </div>
+
+            <div class="footerbottom">
+                <a class="facebook" href="https://www.team-lab.com/">
+                    F
+                </a>
+                <a class="twiter" href="https://www.team-lab.com/">
+                    🐤
+                </a>
+                <a class="insta" href="https://www.team-lab.com/">
+                    📷
+                </a>
+                <a class="youtube" href="https://www.team-lab.com/">
+                    ▶
+                </a>
+            </div>
+        </div>
     </footer>
 
 </body>
