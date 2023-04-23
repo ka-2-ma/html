@@ -1,8 +1,8 @@
 header{
     /* display: block; */
     position: fixed;
-    height: 100px;
-    /* 実際に画像を貼り付ければ透けない？ */
+    /* height: 100px; */
+    z-index: 5;
 }
 
 /* .headerimg{
@@ -16,7 +16,9 @@ header{
     top: 0%;
     left: 0%;
     padding-top: 50px;
-    
+    background-color: white;
+
+
     /* padding-left: 5%;
     padding-right: 5%; */
 }
@@ -33,6 +35,7 @@ header{
     clear:right;
     font-size: 10px;
     margin-bottom: 30px;
+    
 }
 .title1{
     justify-content: start;
@@ -56,9 +59,6 @@ header{
     padding-right: 3%;
 }
 
-ul{
-    display: flex;
-}
 
 .space{
     width: 1200px;
@@ -66,67 +66,159 @@ ul{
 }
 
 
+
+
+
+
 /* mainスタート */
 .mainTop{
-    /* padding: 2% 2% 8% 2%; */
-    margin-bottom: 10ch;
-}
-
-.fontPosition{
-    position: relative;
+    
+    margin: 16px 16px 200px 16px;
 }
 p{
     position: absolute;
-    top: 0%;
-    right: 0px;
-    font-size: 20px;
+    top: 10px;
+    right: 10px;
+    padding: 3px;
+    font-size: 10px;
     color: black;
-    background-color: gray;
+    background-color: white;
 }
+
 
 /* １列目 */
 .firstColumm{
     display: flex;
     justify-content: space-around;
-
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
 }
+.fontPosition1{
+    /* position: relative; */
+    width: 50%;
+    margin: 16px;
+}
+/* p{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: black;
+    background-color: gray;
+} */
 
 /* 2列目 */
 .secondColumm{
     display: flex;
     justify-content: space-around;
+    padding-left: 8px;
+    padding-right: 8px;
 } 
+.fontPosition2{
+    position: relative;
+    width: 25%;
+    margin: 16px;
+}
+/* p{
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    font-size: 20px;
+    color: black;
+    background-color: gray;
+} */
 
 
 /* 3列目 */
 .thirdColumm{
     display: flex;
     justify-content: space-around;
+    padding-left: 8px;
+    padding-right: 8px;
 } 
+.fontPosition3{
+    position: relative;
+    width: 25%;
+    margin: 16px;
+}
+/* p{
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    font-size: 20px;
+    color: black;
+    background-color: gray;
+} */
 
 /* 4列目 */
 .forthColumm{
     display: flex;
     justify-content: space-around;
+    padding-left: 8px;
+    padding-right: 8px;
 }
+.BigfontPosition4{
+    width: 50%;
+}
+
+.fontPosition4{
+    position: relative; 
+    width: 50%;
+    margin: 16px;
+}
+
+/* p{
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    font-size: 20px;
+    color: black;
+    background-color: gray;
+} */
 
 .square1{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: end;
+    width: 50%;
+    /* justify-content: space-around; */
 }
+
 
 /* 5列目 */
 .fifthColumm{
     display: flex;
-    justify-content: flex-end;
     justify-content: space-around;
+    padding-left: 8px;
+    padding-right: 8px;
 }
+.fontPosition5{
+    position: relative;
+    width: 50%;
+    margin: 16px;
+}
+/* p{
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    font-size: 20px;
+    color: black;
+    background-color: gray;
+} */
 .square2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 50%;
 }
+
+.BigfontPosition5{
+    display: flex;
+    justify-content: end;
+    width: 50%;
+}
+
 
 .twopictures{
     display: flex;
@@ -137,28 +229,61 @@ p{
 .sixthColumm{
     display: flex;
     justify-content: space-around;
+    padding-left: 8px;
+    padding-right: 8px;
 }
+.fontPosition6{
+    position: relative;
+    width: 25%;
+    margin: 16px;
+}
+/* p{
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    font-size: 20px;
+    color: black;
+    background-color: gray;
+} */
 
 /* 7列目 */
 .seventh{
     display: flex;
     justify-content: flex-start;
+    padding-left: 4px;
+    padding-right: 4px;
 }
+.fontPosition7{
+    position: relative;
+    width: 25%;
+    margin: 16px;
+}
+/* p{
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    font-size: 20px;
+    color: black;
+    background-color: gray;
+} */
 
 
 /* main下部コーナー */
 
-/* calendar のdivがすべて同階層にあるから１まとめのすると正しく動かない */
+/* main上 */
+.main{
+
+}
 
 .main-bottom{
     background-color:rgb(233, 229, 229);
-    padding: 15% 5% 0 5%;
+    padding: 150px 60px 0 60px;
     margin-bottom: 0%;
 }
 
 .infomationTitle{
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 50px;
     color: black;
     font-size: 3ch;
 }
@@ -167,21 +292,24 @@ p{
 .infomation{
     display: flex;
     align-items: center;
-    margin-top: 1%;
-    padding: 2%;
+    margin-top: 10px;
+    padding: 20px;
     background-color: white;
     position: relative;
 }
 
 .caption{
-    height: 20%;
-    width: 10%;
+    /* height: 20%;
+    width: 10%; */
+    position: absolute;
+    top: 40%;
+    left: 5%;
 }
 
 /* ☝☟上下のやつはいらない。「position」で『detail』の位置を決めてるから、『caption』の位置も勝手に決まる */
 
 .detail{
-    height: 20%;
+    height: 50px;
     width: 80%;
     position: absolute;
     left: 20%;
@@ -227,8 +355,8 @@ p{
     justify-content: flex-start;
 }
 
+/* main上 */
 /* main下部のボタン */
-
 .ButtonArea{
     display: flex;
     justify-content: center;
@@ -249,11 +377,11 @@ p{
     margin: 30px;
 }
 
-
+/* main下 */
 .additionInfo{
     display: flex;
     flex-wrap: nowrap;
-    padding: 0%;
+    padding: 0;
 }
 
 .info1{
@@ -311,11 +439,11 @@ p{
     color: white;
 }
 .facebook{
-    margin-right: 5%;
+    margin-right: 20px;
 }
 .twiter{
-    margin-right: 5%;
+    margin-right: 20px;
 }
 .insta{
-    margin-right: 5%;
+    margin-right: 20px;
 }
